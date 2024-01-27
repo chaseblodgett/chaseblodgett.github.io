@@ -1,0 +1,136 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* #container::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #D8D4F2;
+}
+
+/* #img-bg {
+    z-index: -1;
+    opacity: 0.85;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* filter: blur(1px) brightness(120%) contrast(120%) saturate(120%); */
+} */
+
+#nav {
+    height: 8%;
+    background-color: #A29587;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.85;
+}
+
+#search-form {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#personal-links { 
+    height: 10%;
+    z-index: 1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-bar {
+    font-family: 'Karla';
+    font-weight: 100;
+    font-size: .91rem;
+    padding: 20px;
+    margin: 0;
+    width: 400px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0px solid white;
+    /* box-shadow: 3px 2px 93px 9px rgba(18,10,66,1); */
+    color: white;
+    background-color: #C4B2BC;
+}
+
+button{
+    border-width : 0;
+}
+
+#search-btn {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px outset #C7CFD9;
+    color: white;
+    background-color: #C4B2BC;
+    /* box-shadow: 3px 2px 93px 9px rgba(18,10,66,1); */
+}
+
+.material-symbols-outlined {
+    color: gray;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#search-btn:hover, #search-bar:hover {
+    cursor: pointer;
+    transform : scale(1.02);
+    opacity: 0.95;
+    background-color: #cabac3;
+}
+
+#linkedIn, #github {
+    width : 60px;
+    height : 60px;
+    margin : 40px;
+}
+
+input {
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+

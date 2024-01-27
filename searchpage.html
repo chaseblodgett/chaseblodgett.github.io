@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./searchpage-style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inria+Serif&family=PT+Serif+Caption&family=Prata&display=swap" rel="stylesheet">
+    <title>CodeConnect</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="search-container">
+            <form id="search-form">
+                <div id="search">
+                    <input type="search" placeholder="Search GitHub for Coders, Repositories, Companies..." id="search-bar"/>
+                    <button id="search-btn">
+                        <span class="material-symbols-outlined">
+                            search
+                            </span>
+                    </button>    
+                </div>
+            </form>
+        </div>
+        <div id="results-container">
+            <h2 class="result-header"><strong>Users Matching Your Search</strong></h2>
+            <div id="user-results" class="scroll-section">
+            </div>
+            <h2 class="result-header"><strong>Repositories Matching Your Search</strong></h2>
+            <div id="repo-results" class="scroll-section">
+            </div>
+            <h2 class="result-header"><strong>Topics Matching Your Search</strong></h2>
+            <div id="topic-results" class="scroll-section">
+            </div>
+            <h2 class="result-header"><strong>Organizations Matching Your Search</strong></h2>
+            <div id="organization-results" class="scroll-section">
+            </div>
+        </div>
+    </div>
+    <script src="./searchpage-script.js"></script>
+</body>
+</html>
